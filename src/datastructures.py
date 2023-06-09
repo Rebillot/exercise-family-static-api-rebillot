@@ -50,10 +50,13 @@ class FamilyStructure:
     def delete_member(self, id):
         # fill this method and update the return
         for member in self._members:
-            if member['id']== id:
+            if member['id'] == id:
                 self._members.remove(member)
-            return {'Member deleted': True}
+                return {'Member deleted': True}
         return {'error': 'Member not found'}
+
+
+
 
     def get_member(self, id):
         # fill this method and update the return
